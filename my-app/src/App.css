@@ -1,10 +1,10 @@
 *{
   margin: 0;
   padding: 0;
-  color: white;
+  color:black;
 }
 .navbar {
-  background-color: #333;
+  background-color: #0d78e373;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -25,6 +25,13 @@
   align-items: center;
   margin: 0 10px; /* Add margin between list items if needed */
 }
+a{
+  text-decoration: none;
+}
+.navbar .leftNav{
+  font-size: 23px;
+  padding-left: 20px;
+}
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
@@ -37,11 +44,16 @@
     margin: 10px 0; /* Add spacing between vertically stacked items */
   }
 }
+.svg{
+  height: 24px;
+  width: 24px;
+  
+}
 /* Existing styles for .navbar */
 
 .footer {
-  background-color: #333;
-  color: white;
+  background-color: #0d78e373;
+  color: black;
   padding: 20px 0;
   text-align: center;
   position: fixed;
@@ -56,3 +68,35 @@
   margin: 0 auto;
 }
 
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
